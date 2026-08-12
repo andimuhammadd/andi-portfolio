@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak — Andi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="logo">andi<span>@</span>portfolio</a>
+    <button class="nav-toggle" aria-label="Buka menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="services.html">Layanan</a></li>
+      <li><a href="process.html">Proses Kerja</a></li>
+      <li><a href="about.html">Tentang</a></li>
+      <li><a href="contact.html" class="active">Kontak</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Hubungi Saya</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow"><span class="dot"></span>STATUS: MERESPON DALAM 1x24 JAM</span>
+      <h1>Mari terhubung.</h1>
+      <p>Terbuka untuk peluang kerja, kolaborasi project, atau sekadar diskusi seputar infrastruktur IT dan pengembangan web.</p>
+    </div>
+  </section>
+
+  <section class="section" style="border-top:none; padding-top:20px;">
+    <div class="container contact-grid">
+
+      <div>
+        <div class="contact-info-item">
+          <span class="label">Email</span>
+          <a href="mailto:muhammadandiaziz111@email.com">muhammadandiaziz111@email.com</a>
+        </div>
+        <div class="contact-info-item">
+          <span class="label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/muhammad-andi-aziz-513503221/" target="_blank" rel="noopener">linkedin.com/in/muhammad-andi-aziz-513503221/</a>
+        </div>
+        <div class="contact-info-item">
+          <span class="label">GitHub</span>
+          <a href="https://github.com/andimuhammadd" target="_blank" rel="noopener">github.com/andimuhammadd</a>
+        </div>
+        <div class="contact-info-item">
+          <span class="label">Lokasi</span>
+          <span>Aceh Utara, Indonesia</span>
+        </div>
+        <p class="form-note" style="margin-top:16px;">* Ganti link email/LinkedIn/GitHub di atas (dan di footer semua halaman) dengan akun kamu yang sebenarnya.</p>
+      </div>
+
+      <div>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
+          <input type="hidden" name="form-name" value="contact">
+          <p style="display:none;"><label>Jangan isi ini: <input name="bot-field"></label></p>
+
+          <div class="form-field">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label for="subject">Subjek</label>
+            <input type="text" id="subject" name="subject">
+          </div>
+          <div class="form-field">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+          <p class="form-note">Form ini pakai Netlify Forms — otomatis aktif begitu website di-deploy ke Netlify, tanpa server atau database tambahan (gratis hingga 100 kiriman/bulan).</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span class="fmono">© 2026 Andi. Dibangun dari Banda Aceh.</span>
+    <div class="footer-links">
+      <a href="mailto:muhammadandiaziz111@email.com">Email</a>
+      <a href="https://www.linkedin.com/in/muhammad-andi-aziz-513503221/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/andimuhammadd" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

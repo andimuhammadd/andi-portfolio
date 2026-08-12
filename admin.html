@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Generator Project (khusus kamu)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="logo">andi<span>@</span>portfolio</a>
+    <span class="eyebrow" style="margin-left:auto;">TOOL LOKAL — TIDAK PERLU DI-DEPLOY</span>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">// admin</span>
+      <h1>Generator Kode Project</h1>
+      <p>Isi form di bawah, lalu klik <strong>"Buat Kode"</strong>. Salin hasilnya dan tempel ke dalam array <code>PROJECTS</code> pada file <code>assets/js/projects-data.js</code>. Halaman ini tidak menyimpan data ke mana pun — semua proses terjadi di browser kamu sendiri, jadi aman dipakai kapan saja, bahkan tanpa koneksi internet.</p>
+    </div>
+  </section>
+
+  <section class="section" style="border-top:none; padding-top:20px;">
+    <div class="container contact-grid">
+      <div>
+        <form id="genForm">
+          <div class="form-field">
+            <label for="title">Judul Project</label>
+            <input type="text" id="title" placeholder="Contoh: Sistem Absensi Karyawan" required>
+          </div>
+          <div class="form-field">
+            <label for="status">Status</label>
+            <input type="text" id="status" placeholder="LIVE / IN PROGRESS / ARCHIVED" value="LIVE">
+          </div>
+          <div class="form-field">
+            <label for="desc">Deskripsi Singkat</label>
+            <textarea id="desc" rows="4" placeholder="Jelaskan project ini dalam 1-3 kalimat..." required></textarea>
+          </div>
+          <div class="form-field">
+            <label for="tags">Tags / Teknologi (pisahkan dengan koma)</label>
+            <input type="text" id="tags" placeholder="PHP, MySQL, JavaScript">
+          </div>
+          <div class="form-field">
+            <label for="live">Link Live / Demo (boleh dikosongkan)</label>
+            <input type="url" id="live" placeholder="https://...">
+          </div>
+          <div class="form-field">
+            <label for="repo">Link Source Code / GitHub (boleh dikosongkan)</label>
+            <input type="url" id="repo" placeholder="https://github.com/...">
+          </div>
+          <button type="button" class="btn btn-primary" id="genBtn">Buat Kode</button>
+        </form>
+      </div>
+
+      <div>
+        <span class="eyebrow" style="margin-bottom:12px; display:inline-flex;">// hasil (copy ini)</span>
+        <div class="term-card">
+          <div class="term-bar">
+            <span class="tdot"></span><span class="tdot"></span><span class="tdot"></span>
+            <span class="tpath">output.js</span>
+          </div>
+          <pre id="output" class="term-body" style="white-space:pre-wrap; word-break:break-word; min-height:220px;">// hasil akan muncul di sini setelah kamu klik "Buat Kode"</pre>
+        </div>
+        <button type="button" class="btn btn-ghost" id="copyBtn" style="margin-top:16px;">Salin ke Clipboard</button>
+        <p class="form-note" id="copyStatus"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span class="fmono">Tool internal — hapus atau abaikan halaman ini saat deploy bila tidak diperlukan.</span>
+  </div>
+</footer>
+
+<script src="assets/js/admin.js"></script>
+</body>
+</html>
