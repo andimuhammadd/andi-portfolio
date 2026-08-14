@@ -48,13 +48,18 @@ function renderProjects(targetSelector, opts){
   }
 
   target.innerHTML = list.map(p => {
-    const initials = p.title.split(' ').slice(0,2).map(w => w[0]).join('').toUpperCase();
+    // Cek jika properti image ada, render tag <img>, jika tidak gunakan inisial teks
+    const thumbContent = p.image 
+      ? `<img src="${escapeAttr(p.image)}" alt="${escapeAttr(p.title)}" class="project-image">` 
+      : escapeHtml(p.title.split(' ').slice(0,2).map(w => w[0]).join('').toUpperCase());
+      
     const tags = (p.tags || []).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('');
     const live = p.liveUrl ? `<a href="${escapeAttr(p.liveUrl)}" target="_blank" rel="noopener">Lihat Live ↗</a>` : '';
     const repo = p.repoUrl ? `<a href="${escapeAttr(p.repoUrl)}" target="_blank" rel="noopener">Source Code ↗</a>` : '';
+    
     return `
       <article class="project-card">
-        <div class="project-thumb">${escapeHtml(initials)}</div>
+        <div class="project-thumb">${thumbContent}</div>
         <div class="project-body">
           <span class="status">${escapeHtml(p.status || 'PROJECT')}</span>
           <h3>${escapeHtml(p.title)}</h3>

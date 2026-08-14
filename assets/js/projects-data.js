@@ -5,7 +5,8 @@ const PROJECTS = [
     description: "Stack monitoring infrastruktur production-grade yang mendeteksi anomali CPU, RAM, disk, dan downtime service secara real-time, lengkap dengan alerting otomatis ke Telegram. Seluruh stack didefinisikan sebagai kode (Docker Compose) sehingga bisa di-deploy ulang ke server mana pun hanya dalam beberapa menit.",
     tags: ["Docker", "Prometheus", "Grafana", "Alertmanager", "Linux", "Telegram API"],
     liveUrl: "",
-    repoUrl: "https://github.com/andimuhammadd/server-monitoring-stack"
+    repoUrl: "https://github.com/andimuhammadd/server-monitoring-stack",
+    image: "/images/grafana-dashboard.png"
   },
   {
     title: "Sistem Manajemen Inventaris (Yii2)",
