@@ -6,7 +6,7 @@ const PROJECTS = [
     tags: ["Docker", "Prometheus", "Grafana", "Alertmanager", "Linux", "Telegram API"],
     liveUrl: "",
     repoUrl: "https://github.com/andimuhammadd/server-monitoring-stack",
-    image: "/images/grafana-dashboard.png"
+    image: "assets/images/grafana-dashboard.png"
   },
   {
     title: "Sistem Manajemen Inventaris (Yii2)",
