@@ -17,11 +17,12 @@ const PROJECTS = [
     repoUrl: "https://github.com/username/inventory-management-yii2"
   },
   {
-    title: "Skrip Otomasi Deployment VPS",
-    status: "ARCHIVED",
-    description: "Kumpulan Bash script untuk otomasi setup awal VPS: konfigurasi firewall, hardening SSH, instalasi stack LEMP, dan penjadwalan backup otomatis.",
-    tags: ["Bash", "Linux", "Nginx", "Automation"],
+    title: "VPS Security Hardening Toolkit",
+    status: "LIVE",
+    description: "Studi kasus hardening keamanan server produksi yang sedang aktif melayani bisnis nyata: SSH key authentication, fail2ban, firewall rate limiting, dan automatic security updates — lengkap dengan dokumentasi trade-off keputusan keamanan vs kebutuhan operasional tim, plus script audit yang reusable.",
+    tags: ["Linux", "Bash", "SSH", "fail2ban", "UFW", "Security"],
     liveUrl: "",
-    repoUrl: "https://github.com/username/vps-deployment-scripts"
+    repoUrl: "https://github.com/andimuhammadd/vps-hardening-toolkit",
+    image: "assets/images/grafana-dashboard.png"
   }
 ];
