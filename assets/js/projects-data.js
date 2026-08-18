@@ -23,6 +23,6 @@ const PROJECTS = [
     tags: ["Linux", "Bash", "SSH", "fail2ban", "UFW", "Security"],
     liveUrl: "",
     repoUrl: "https://github.com/andimuhammadd/vps-hardening-toolkit",
-    image: "assets/images/grafana-dashboard.png"
+    image: "assets/images/audit-output.png"
   }
 ];
